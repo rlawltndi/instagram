@@ -12,3 +12,36 @@ h2{
     border : solid;
     border-color : blue;
    }
+   .thumbnails_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+   .thumbnails{
+    width: 100%;
+   }
+   #state_bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+
+    margin-left: 5px;
+    margin-right: 5px;
+   }
+   .state{
+        text-align: center;
+   }
+   .circle_pic{
+    border: solid white 1px;
+    border-radius: 50%;
+    
+   }
+   #profile_pic{
+    width: 50px;
+    height: 50px;
+   }
+   .highlight_pic{
+    width: 35px;
+    height: 35px;
+   }
+
