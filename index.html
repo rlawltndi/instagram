@@ -6,45 +6,62 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>instagram</title>
         <link href="style.css" rel="stylesheet">
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
     </head>
     <body>
-        <img src="image/instagramlogo.png" width="150px">
-        <input type="search" value="검색"/><br>
-        <div id="profile">
-            <div id="profile_pic">
-        <img src="image/profile.jpg" class="circle_pic">
+        <div id="top">
+            <div id="top_img">
+                <img src="image/instagramlogo.png" width="150px">
             </div>
+                <input type="search" value="🔍검색">
             <div>
-                <h2>half_bottle</h2>
-               <!-- 회색 버튼이 생긴다.
-                css를 공부하면 버튼의 크기와 색상 , 모양을 취향대로 수정할 수 있다.-->
-                <button>프로필 편집</button> 
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
             </div>
-        
-            <div>
-            <p>
-                <!--<strong> 볼드체 표현-->
-                <strong>
-                    빈병현 (Byunghyun Bin)<br>
-                </strong>
-                작가
-            </p>
-            <p>
-                <a>
-                href="http://needleworm.github.io"
-                </a>
-            </p>  
         </div>
 
-        <div>
+        <!--프로필 부분-->
+        <div id="profile">
+            <div id="profile_pic">
+                 <img src="image/profile.jpg" class="circle_pic">
+            </div>
+            <div id="profile_info">
+                <div id="id">
+                    half_bottle <i class="fas fa-cog"></i>
+                </div>
+                <button>프로필 편집</button> 
+            </div>
+        </div>
+        <!--프로필ed-->
+            <!--회색 버튼이 생긴다.
+                css를 공부하면 버튼의 크기와 색상 , 모양을 취향대로 수정할 수 있다.-->
+        
+            <div>
+                <p>
+                    <!--<strong> 볼드체 표현-->
+                    <strong>
+                        빈병현 (Byunghyun Bin)<br>
+                    </strong>
+                    작가
+                </p>
+                <p>
+                    <a  href="http://needleworm.github.io">
+                        http://needleworm.github.io
+                    </a>
+                </p>  
+            </div>
+
+        <div id="highlight_area">
             <!--높이 35px로 하이라이트 이미지 2개 넣기-->
             <div class="highlight">
                 <div class="highlight_pic">
-                <img src="image/hl 1.jpg " class="circle_pic">
+                    <img src="image/hl 1.jpg " class="circle_pic">
                 </div>
                 <div>
-                <!-- wondow + ; -->
-                😉
+                    <!-- wondow + ; -->
+                    😉
                 </div>
             </div>
             <div class="highlight">
@@ -52,10 +69,11 @@
                     <img src="image/hl 2.jpg" class="circle_pic">
                 </div>
                 <div>
-                        <!-- wondow + ; -->
-                        😎
+                     <!-- wondow + ; -->
+                    😎
                 </div>
             </div>
+            <div></div>
         </div>
 
         <div id="state_bar">
@@ -73,29 +91,46 @@
             </div>
         </div>
 
-        <div>아이콘이 들어갈 자리    
+        <div id="sub_icons">
+            <div class="selected">
+                <i class="fas fa-border-all"></i>          
+            </div>
+                <div>
+                    <i class="fas fa-film"></i>
+                </div>
+                <div>
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <div>
+                    <i class="fas fa-bookmark"></i>
+                </div>
+                <div>
+                    <i class="fas fa-user-tag"></i>
+                </div>
+        </div>
+        
+        <div>
+            <div class="thumbnails_grid">
+                <!--(%)로 지정한 값은 화면의 크기에 따라 이미지의 크기가 유동적으로 바뀜
+                이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진의 크기가 바뀌는
+                웹 페이지를 반응형 웹이라고 한다.
+                모든 웹 페이지 외주에서 반응형 웹이 가장 비싼 가격으로 거래되고 있다.
+                가장 수요가 높고 난이도가 높기 때문-->
+                <image src="image/thumbnails/1.jpg" class="thumbnails">
+                <image src="image/thumbnails/2.jpg" class="thumbnails">
+                <image src="image/thumbnails/3.jpg" class="thumbnails">
+            </div>
+            <div class="thumbnails_grid">
+                <image src="image/thumbnails/4.jpg" class="thumbnails">
+                <image src="image/thumbnails/5.jpg" class="thumbnails">
+                <image src="image/thumbnails/6.jpg" class="thumbnails">
+            </div>
+            <div class="thumbnails_grid">
+                <image src="image/thumbnails/7.jpg" class="thumbnails">
+                <image src="image/thumbnails/8.jpg" class="thumbnails">
+                <image src="image/thumbnails/9.jpg" class="thumbnails"> 
+            </div>
         </div>
 
-        <div class="thumbnails_grid">
-            <!--(%)로 지정한 값은 화면의 크기에 따라 이미지의 크기가 유동적으로 바뀜
-            이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진의 크기가 바뀌는
-            웹 페이지를 반응형 웹이라고 한다.
-            모든 웹 페이지 외주에서 반응형 웹이 가장 비싼 가격으로 거래되고 있다.
-            가장 수요가 높고 난이도가 높기 때문-->
-            <image src="image/thumbnails/1.jpg" class="thumbnails">
-            <image src="image/thumbnails/2.jpg" class="thumbnails">
-            <image src="image/thumbnails/3.jpg" class="thumbnails">
-        </div>
-        <div class="thumbnails_grid">
-            <image src="image/thumbnails/4.jpg" class="thumbnails">
-            <image src="image/thumbnails/5.jpg" class="thumbnails">
-            <image src="image/thumbnails/6.jpg" class="thumbnails">
-        </div>
-        <div class="thumbnails_grid">
-            <image src="image/thumbnails/7.jpg" class="thumbnails">
-            <image src="image/thumbnails/8.jpg" class="thumbnails">
-            <image src="image/thumbnails/9.jpg" class="thumbnails"> 
-        </div>
-        </div>
     </body>
 </html>
