@@ -38,6 +38,7 @@
     border: 1px solid gray;
     border-radius: 3px;
    }
+   
    /*-----------썸네일-----------------*/
    .thumbnails_grid{
     display: grid;
